@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Form">
+
+    <EditText
+        android:id="@+id/VehicleNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/enter_your_vehicle_number"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/forHints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info2"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Switch
+        android:id="@+id/way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="@string/swtch"
+        android:textColor="@color/colorPrimary"
+        android:textOff="@string/one_way"
+        android:textOn="@string/two_way"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adhaar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/Proceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/proceed"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:singleLine="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="@string/complete_the_below_form_to_see_your_tariff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adhaar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:hint="@string/enter_your_adhaar_card_number"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/forHints"
+        app:layout_constraintBottom_toTopOf="@+id/Proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleNo"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="195dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/Proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleNo"
+        app:layout_constraintVertical_bias="0.115">
+
+        <LinearLayout
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="270dp">
+
+            <TextView
+                android:id="@+id/selectinfo"
+                android:layout_width="180dp"
+                android:layout_height="75dp"
+                android:singleLine="false"
+                android:text="@string/select_nvehicle_type"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp" />
+
+            <ImageButton
+                android:id="@+id/motorcycle"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/motorcycle"
+                android:contentDescription="@string/todo" />
+
+            <ImageButton
+                android:id="@+id/car"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/car"
+                android:contentDescription="@string/todo" />
+
+            <ImageButton
+                android:id="@+id/truck1"
+                android:layout_width="191dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/lighttruck"
+                android:contentDescription="@string/todo" />
+
+            <ImageButton
+                android:id="@+id/truck2"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/truck2"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Toll Estimator</string>
+    <string name="swtch">"One Way  "</string>
+    <string name="swtchnext">"Two Way "</string>
+    <string name="todo">TODO</string>
+    <string name="enter_your_vehicle_number">Enter your vehicle number</string>
+    <string name="one_way">One way</string>
+    <string name="two_way">Two way</string>
+    <string name="proceed">Proceed</string>
+    <string name="complete_the_below_form_to_see_your_tariff">Complete the below form to see your tariff :-</string>
+    <string name="enter_your_adhaar_card_number">Enter your adhaar card number</string>
+    <string name="select_nvehicle_type">"Select\n Vehicle Type"</string>
+    <string name="wellcome_to_the_smart_toll_system_enjoy_hassel_free_toll_payment_with_our_user_friendly_mobile_app">Wellcome to the smart Toll system. Enjoy hassel free toll payment with our user friendly mobile app.</string>
+    <string name="thank_you_for_using_our_smart_tolling_service_see_you_again">Thank you for using our smart tolling service.See you again</string>
+    <string name="your_tariff_is">Your tariff is :</string>
+    <string name="back">Back</string>
+    <string name="finish">Finish</string>
+    <string name="test">0.00</string>
+</resources>
